@@ -7,6 +7,7 @@ import router from './router'
 import './assets/styles/reset.css'
 // 引入解决一像素边框问题的文件
 import './assets/styles/border.css'
+import './assets/styles/iconfont.css'
 // 引入fastclick
 import fastClick from 'fastclick'
 Vue.config.productionTip = false
