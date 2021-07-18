@@ -8,11 +8,18 @@ import './assets/styles/reset.css'
 // 引入解决一像素边框问题的文件
 import './assets/styles/border.css'
 import './assets/styles/iconfont.css'
+
 // 引入fastclick
 import fastClick from 'fastclick'
+// 引入vue-awesome-swiper
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+// 引入轮播图CSS文件
+import 'swiper/dist/css/swiper.css'
 Vue.config.productionTip = false
 // 使用fastClick
 fastClick.attach = (document.body)
+// 使用轮播图插件
+Vue.use(VueAwesomeSwiper)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
