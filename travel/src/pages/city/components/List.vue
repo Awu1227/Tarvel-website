@@ -120,9 +120,11 @@ export default {
           padding 1.3333vw 0
           border 0.2667vw solid #ccc
           border-radius 0.8vw
+          font-size 1.8667vw
     .item-list
       .item
         line-height 10.1333vw
         color #666
         padding-left 2.6667vw
+        font-size 1.8667vw
 </style>

@@ -26,5 +26,6 @@ export default {
     bottom 0
     width 5.3333vw
     color $bgColor
-
+    .item
+      font-size 2.6667vw
 </style>
