@@ -8,7 +8,7 @@
       输入城市/景点/游玩主题</div>
     <router-link to="/city">
       <div class="header-right">{{this.city}}
-        <span class="iconfont">&#xe6a6;</span>
+        <span class="iconfont ">&#xe6a6;</span>
       </div>
     </router-link>
   </div>
@@ -29,27 +29,31 @@ export default {
     line-height $headerHeight
     background  $bgColor
     display flex
-    height .86rem
+    line-height 11.4667vw
+    height 11.4667vw
     color #fff
     .header-left
-      width .64rem
+      width 8.5333vw
       float left
       text-align center
-      .back-icon
-        font-size x-large
+      .iconfont
+        font-size 7.4667vw
     .header-input
       flex 1
-      line-height .64rem
-      height .64rem
-      margin-top .11rem
-      margin-left .2rem
-      padding-left .08rem
+      line-height 8.5333vw
+      height 8.5333vw
+      margin-top 1.4667vw
+      margin-left 2.6667vw
+      padding-left 1.0667vw
       background-color #fff
-      border-radius .1rem
+      border-radius 1.3333vw
+      font-size 3.7333vw
       color #ccc
     .header-right
       color #fff
-      width 1.24rem
+      width 16.5333vw
       float right
       text-align center
+      .iconfont
+        font-size 7.4667vw
 </style>
