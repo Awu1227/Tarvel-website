@@ -2,7 +2,7 @@
   <div>
 <div class="title">热销推荐</div>
   <ul>
-    <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+    <li class="item border-bottom" v-for="item of list" :key="item.id">
         <img class="item-img" :src="item.imgUrl" alt="">
       <div class="item-info">
         <p class="item-title">{{item.title}}</p>
@@ -16,39 +16,8 @@
 <script>
 export default {
   name: 'Recommend',
-  data () {
-    return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'https://youimg1.c-ctrip.com/target/0101q12000859gshi78BE_D_480_320.jpg',
-        title: '长沙海底世界',
-        desc: '"观赏海洋生物夏季亲水消暑"'
-      },
-      {
-        id: '0002',
-        imgUrl: 'https://youimg1.c-ctrip.com/target/0101q12000859gshi78BE_D_480_320.jpg',
-        title: '长沙海底世界',
-        desc: '"观赏海洋生物夏季亲水消暑"'
-      },
-      {
-        id: '0003',
-        imgUrl: 'https://youimg1.c-ctrip.com/target/0101q12000859gshi78BE_D_480_320.jpg',
-        title: '长沙海底世界',
-        desc: '"观赏海洋生物夏季亲水消暑"'
-      },
-      {
-        id: '0004',
-        imgUrl: 'https://youimg1.c-ctrip.com/target/0101q12000859gshi78BE_D_480_320.jpg',
-        title: '长沙海底世界',
-        desc: '"观赏海洋生物夏季亲水消暑"'
-      },
-      {
-        id: '0005',
-        imgUrl: 'https://youimg1.c-ctrip.com/target/0101q12000859gshi78BE_D_480_320.jpg',
-        title: '长沙海底世界',
-        desc: '"观赏海洋生物夏季亲水消暑"'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>

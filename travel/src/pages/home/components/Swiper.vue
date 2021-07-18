@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
-    <swiper :options="swiperOption">
-      <swiper-slide v-for = "item of swiperList" :key="item.id">
+    <swiper :options="swiperOption" v-if="showSwiper">
+      <swiper-slide v-for = "item of list" :key="item.id">
         <img class="swiper-img" :src="item.imgUrl" alt="">
       </swiper-slide>
       <div class="swiper-pagination"  slot="pagination"></div>
@@ -11,6 +11,9 @@
 <script>
 export default {
   name: 'HomeSwiper',
+  props: {
+    list: Array
+  },
   data () {
     return {
       swiperOption: {
@@ -18,19 +21,13 @@ export default {
         pagination: '.swiper-pagination',
         // 循环展示轮播
         loop: true
-      },
-      swiperList: [{
-        id: '0001',
-        imgUrl: 'https://static.699pic.com/images/lvyou/slide-shanghai.jpg'
-      },
-      {
-        id: '0002',
-        imgUrl: 'https://static.699pic.com/images/lvyou/slide-zhangjiajie.jpg'
-      },
-      {
-        id: '0003',
-        imgUrl: 'https://static.699pic.com/images/lvyou/slide-sanya.jpg'
-      }]
+      }
+    }
+  },
+  computed: {
+    // 使轮播一开始显示的是第一页
+    showSwiper () {
+      return this.list.length
     }
   }
 }
