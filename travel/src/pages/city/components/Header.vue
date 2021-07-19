@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+  <div class="header" >
     <router-link to="/">
       <span class="iconfont header-back" >&#xe697;</span>
     </router-link>
@@ -8,6 +8,11 @@
 </template>
 <script>
 export default {
+  data () {
+    return {
+      headerWidth: []
+    }
+  },
   name: 'CityHeader'
 }
 </script>
