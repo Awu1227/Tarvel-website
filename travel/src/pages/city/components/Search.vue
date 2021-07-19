@@ -5,7 +5,7 @@
   </div>
   <div class="search-content" ref="search" v-show="keyword">
     <ul>
-      <li v-for="item of list" :key="item.id" class="search-item border-bottom">{{item.name}}</li>
+      <li @click="handleCityClick(item.name )" v-for="item of list" :key="item.id" class="search-item border-bottom">{{item.name}}</li>
       <li class="search-item border-bottom" v-show="hasNoData">没有找到该城市</li>
     </ul>
   </div>
@@ -23,6 +23,12 @@ export default {
       keyword: '',
       list: [],
       timer: null
+    }
+  },
+  methods: {
+    handleCityClick (city) {
+      this.$store.dispatch('changeCity', city)
+      this.$router.push('/')
     }
   },
   computed: {
@@ -53,7 +59,7 @@ export default {
     }
   },
   mounted () {
-    this.scroll = new Bscroll(this.$refs.search)
+    this.scroll = new Bscroll(this.$refs.search, {click: true})
   }
 }
 </script>

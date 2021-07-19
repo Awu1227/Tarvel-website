@@ -15,6 +15,7 @@ import fastClick from 'fastclick'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 // 引入轮播图CSS文件
 import 'swiper/dist/css/swiper.css'
+import store from './vuex/index'
 Vue.config.productionTip = false
 // 使用fastClick
 fastClick.attach = (document.body)
@@ -24,6 +25,7 @@ Vue.use(VueAwesomeSwiper)
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })
