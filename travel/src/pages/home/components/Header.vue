@@ -7,7 +7,7 @@
       <span class="iconfont">&#xe6ac;</span>
       输入城市/景点/游玩主题</div>
     <router-link to="/city">
-      <div class="header-right">{{this.city}}
+      <div class="header-right"><span class="city">{{this.city}}</span>
         <span class="iconfont ">&#xe6a6;</span>
       </div>
     </router-link>
@@ -26,7 +26,6 @@ export default {
 /* 引入CSS文件，在@符号之前需要加波浪线 */
   @import '~styles/varibles.styl'
   .header
-    line-height $headerHeight
     background  $bgColor
     display flex
     line-height 11.4667vw
@@ -50,10 +49,17 @@ export default {
       font-size 3.7333vw
       color #ccc
     .header-right
+      position relative
       color #fff
       width 16.5333vw
       float right
       text-align center
+      .city
+        position absolute
+        top 0.5333vw
+        left 0
       .iconfont
         font-size 7.4667vw
+        position absolute
+        left 8vw
 </style>

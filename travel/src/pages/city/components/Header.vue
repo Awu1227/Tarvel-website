@@ -33,6 +33,6 @@ export default {
     position absolute
     width 8.5333vw
     text-align center
-    font-size 5.3333vw
+    font-size 7.4667vw
     color #fff
 </style>
