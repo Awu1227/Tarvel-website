@@ -49,7 +49,6 @@ export default {
         const element = this.$refs[this.letter][0]// 本来是一个数组，需要转换加[0]
         this.scroll.scrollToElement(element)
       }
-      console.log(this.letter)
     }
   }
 }

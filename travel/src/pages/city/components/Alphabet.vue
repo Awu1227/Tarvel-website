@@ -51,7 +51,7 @@ export default {
           if (index >= 0 && index < this.letter.length) {
             this.$emit('change', this.letter[index])
           }
-        }, 100)
+        }, 10)
       }
     },
     handleTouchEnd () {
