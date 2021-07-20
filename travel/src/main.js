@@ -8,7 +8,7 @@ import './assets/styles/reset.css'
 // 引入解决一像素边框问题的文件
 import './assets/styles/border.css'
 import './assets/styles/iconfont.css'
-
+import 'babel-polyfill'
 // 引入fastclick
 import fastClick from 'fastclick'
 // 引入vue-awesome-swiper

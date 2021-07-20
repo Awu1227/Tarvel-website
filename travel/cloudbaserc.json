@@ -1,0 +1,19 @@
+{
+    "envId": "vue-3gm7o4afb04a8b70",
+    "version": "2.0",
+    "$schema": "https://framework-1258016615.tcloudbaseapp.com/schema/latest.json",
+    "functionRoot": "./functions",
+    "functions": [],
+    "region": "ap-shanghai",
+    "framework": {
+        "name": "travel",
+        "plugins": {
+            "website": {
+                "use": "@cloudbase/framework-plugin-website",
+                "inputs": {
+                    "outputPath": "./"
+                }
+            }
+        }
+    }
+}
