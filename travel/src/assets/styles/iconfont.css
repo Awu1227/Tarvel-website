@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 2580007 */
-  src: url('./iconfont/iconfont.woff2?t=1626528428972') format('woff2'),
-       url('./iconfont/iconfont.woff?t=1626528428972') format('woff'),
-       url('./iconfont/iconfont.ttf?t=1626528428972') format('truetype');
+  src: url('./iconfont/iconfont.woff2?t=1626741028911') format('woff2'),
+       url('./iconfont/iconfont.woff?t=1626741028911') format('woff'),
+       url('./iconfont/iconfont.ttf?t=1626741028911') format('truetype');
 }
 
 .iconfont {
@@ -12,3 +12,20 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.icon-tupian_huaban1:before {
+  content: "\e604";
+}
+
+.icon-back:before {
+  content: "\e697";
+}
+
+.icon-moreunfold:before {
+  content: "\e6a6";
+}
+
+.icon-search:before {
+  content: "\e6ac";
+}
+
