@@ -26,7 +26,8 @@ export default {
   methods: {
     // 实现渐隐渐现效果
     handleScroll () {
-      const top = document.documentElement.scrollTop
+      // 兼容性处理
+      const top = document.documentElement.scrollTop || document.body.scrollTop || window.pageYOffset
       if (top > 60) {
         let opacity = top / 140
         opacity = opacity > 1 ? 1 : opacity
