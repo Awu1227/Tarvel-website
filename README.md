@@ -1,25 +1,5 @@
-## Vue CLI 2 版本构建的项目
 
-### 切换到课程章节对应的分支
-```
-git checkout 分支名
-```
-
-### 项目依赖安装
-```
-npm install
-```
-
-### 本地开发
-```
-npm run dev
-```
-
-### 打包编译
-```
-npm run build
-```
-
-### 02-05 章基础课程源码：[点击下载](http://www.dell-lee.com/vue-source-code.zip)
-
-### 课程相关问题请在慕课网答疑区留言
+🥗Travel-website 是一个移动端旅游网站项目。<br>
+🥙 技术栈基于 Vue2+Vue-router+VueX 开发。<br>
+🍍 包含首页开发、城市选择页开发以及详情页面开发。<br>
+🥝 应用的高级特性有列表性能优化，LocalStorage 实现页面数据持久存储，使用 keep-alive 优化路由页面性能等。<br>
